@@ -1,0 +1,86 @@
+body{
+    background-color: #a9d0da;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.keyboard-ui{
+    width: 50%;
+}
+
+.form-group{
+    margin-bottom: 0;    
+}
+
+input{
+    height: 100px !important;
+    padding: 0.5em;    
+}
+
+input:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card{
+    width: 100%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.key {
+    font-family: 'Arvo', serif;
+    height: 50px;
+    width: 50px;
+    background-image: url('images/keyboard-key.png');
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+    line-height: 3;
+}
+
+.key:hover{
+    cursor: pointer;
+}
+
+.key p {
+    font-weight: 500;
+}
+
+.space-key{
+    height: 50px;
+    width: 90px;
+    background-image: url('images/space-bar-key.png');
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+    line-height: 3; 
+}
+
+@media screen and (max-width: 824px){
+    .keyboard-ui{
+       width: 100%;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+}
